@@ -93,6 +93,9 @@ or to take all query
 ----------------------------------------
 
 ⭐ working with database mongoDB
+💥 dont forget to set the network IP address to connect
+or set 0.0.0.0/0 to allow all connections
+
 ✅ create project
 ✅ create users
 ✅ from collections create own data
@@ -152,8 +155,56 @@ const Client = require('../models/Client');
 
 ✅ and in projecttype
 ✅ return Client.findById(parent.clientId);
-✅
-✅
-✅
-✅
-✅
+
+✅ create mutation inside of schema.js
+✅ create addClient
+✅ create deleteClient
+✅ create addProject
+✅ create deleteProject
+✅ create updateProject
+
+-----------------------------------------------
+
+⭐ Working on frontend
+💥 npx create-react-app client
+
+// install dependencies
+✅ npm install @apollo/client graphql react-router-dom react-icons
+
+----------------------------------------------
+
+✅ working with src folder
+✅ delete the App.css and logo.svg
+✅ clean all inside the App.js
+
+✅ create components folder
+✅ create assets folder inside
+
+✅ copy the index.css and paste the custom index.css
+✅ change the title at index.html inside the public folder
+
+⭐ using bootstrap
+✅ copy and paste the bootstrap CDN at index.HTML
+
+⭐ working with components folder
+✅ create Header.jsx
+✅ using snippet rfc
+✅ delete the import react from 'react';
+✅ import logo
+✅ working at header.jsx
+
+------------------------------------------------
+
+⭐ setting up apollo
+✅ import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client' in App.js
+✅ wrap the App() return with <ApolloProvider></ApolloProvider>
+
+⭐ making a Clients.jsx
+✅ rfc save it for now and bring it to App.js
+✅ working with Clients.jsx
+
+💥 dont forget to set up CORS at index.js
+const cors = require('cors');
+
+app.use(cors());
+
