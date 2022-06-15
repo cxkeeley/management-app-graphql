@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaUser } from 'react-icons/fa';
 import { useMutation } from '@apollo/client';
-import { ADD_CLIENT } from '../mutations/clientMutation';
+import { ADD_CLIENT } from '../mutations/clientMutations';
 import { GET_CLIENTS } from '../queries/clientQueries';
 
 export default function AddClientModal() {
@@ -85,7 +85,7 @@ export default function AddClientModal() {
                 <div className='mb-3'>
                   <label className='form-label'>Email</label>
                   <input
-                    type='text'
+                    type='email'
                     className='form-control'
                     id='email'
                     value={email}
